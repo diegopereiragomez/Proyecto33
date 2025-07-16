@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="a site description">
+    <meta name="keywords" content="keys, to, set">
+    <title>Catalogo</title>
+    <link rel="icon" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="./estilos/normalize.css" />
+    <link rel="stylesheet" href="./estilos/estilo.css" />
+</head>
+
+<body>
+    <header>
+        <!-- menu de navegacion situado en la cabecera -->
+
+        <nav class="nav-bar">
+            <ul class="nav-link">
+                <!-- este primer elemento se utiliza para visualizacion del menu en pantalla de menos de 950px -->
+                <input type="checkbox" id="checkbox_toogle" />
+                <label for="checkbox_toogle" class="hamburger"> &#9776;</label>
+                <nav class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li class="services">
+                        <a href="#">Servicios</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Zapatillas</a></li>
+                            <li><a href="#">Chandal</a></li>
+                            <li><a href="#">Pantalones</a></li>
+                            <li><a href="#">Sudaderas</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="listado-libros"></div>
+        <div class="nodal" id="nodal">
+            <div class="nodal-contenido" id="nodal-contenido">
+                <span id="cerrar-nodal" class="cerrar-nodal">&times</span>
+                <div>
+                    <h2 id="nodal-titulo"></h2>
+                    <img src="" id="nodal-portada" alt="imagen articulo" class="nodal-imagen">
+                    <p><strong>Autor:</strong><span id="nodal-autor"></span></p>
+                    <p id="nodal-descripcion"></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <!-- elemento decorativo del pie de pagina -->
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <!-- zona reservada para las redes sociales -->
+        <div class="social_icon">
+            <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
+            <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
+            <a href=""><img src="./img/whatsapp.svg" alt="whatsapp" /></a>
+            <a href=""><img src="./img/instagram.svg" alt="instagram" /></a>
+        </div>
+        <!-- menu de navegacion secundario -->
+        <ul class="footer_menu">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Precios</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+        <small>Todos los derechos reservados <a href="#">Diego<sup>&copy;</sup>Quest</a> 🐺</small>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
